@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>KwaMoja Login screen</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="css/login.css" type="text/css" />
+
+	<script type="text/javascript" src = "js/MiscFunctions.js"></script>
+	<script type="text/javascript" src = "js/AjaxFunctions.js"></script>
+</head>
+<body>
+
+
+<div id="container">
+	<table>
+		<tr>
+			<th colspan="2">
+				<div id="login_logo">
+					<a href="http://www.kwamoja.com" target="_blank"><img src="img/kwamoja.png" style="width:100%" /></a>
+				</div>
+			</th>
+		</tr>
+		<tr>
+			<td id="login-container">
+				<div id="login_box">
+					<form action="index.php" name="LogIn" method="post" class="noPrint">
+					<input type="hidden" name="FormID" value="login" />
+					<label>User name:</label>
+					<input type="text" autofocus="autofocus" required="required" name="UserNameEntryField" placeholder="User name" maxlength="20" /><br />
+					<label>Password:</label>
+					<input type="password" required="required" name="Password" placeholder="Password" />
+					<div id="demo_text">Please login here</div>
+					<button class="button" type="submit" value="Login" name="SubmitUser" onclick="SubmitForm(LogIn);return false;">
+						Login
+					</button>
+					</form>
+				</div>
+			</td>
+		</tr>
+	</table>
+</div>
+
+</body>
+</html>
